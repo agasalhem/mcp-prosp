@@ -1,4 +1,4 @@
-# mcp-prosp
+# @agasalhem/mcp-prosp
 
 MCP server for [Prosp.ai](https://prosp.ai) — exposes 15 tools for LinkedIn outbound automation to any MCP-compatible client (Claude Code, Claude Desktop, n8n, etc.).
 
@@ -14,7 +14,7 @@ Add to your project's `.mcp.json`:
     "prosp": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "mcp-prosp"],
+      "args": ["-y", "@agasalhem/mcp-prosp"],
       "env": {
         "PROSP_API_KEY": "sua_chave_aqui"
       }
@@ -34,7 +34,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "prosp": {
       "command": "npx",
-      "args": ["-y", "mcp-prosp"],
+      "args": ["-y", "@agasalhem/mcp-prosp"],
       "env": {
         "PROSP_API_KEY": "sua_chave_aqui"
       }
@@ -46,7 +46,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 ## Quick start — global install
 
 ```bash
-npm install -g mcp-prosp
+npm install -g @agasalhem/mcp-prosp
 ```
 
 Then in `.mcp.json`:
@@ -93,14 +93,14 @@ Then in `.mcp.json`:
 ## HTTP transport (n8n, Make, etc.)
 
 ```bash
-PROSP_API_KEY=sua_chave MCP_TRANSPORT=http npx mcp-prosp
+PROSP_API_KEY=sua_chave MCP_TRANSPORT=http npx @agasalhem/mcp-prosp
 # Server at http://localhost:3000/mcp
 ```
 
 Optional Bearer auth and custom port:
 
 ```bash
-PROSP_API_KEY=sua_chave MCP_TRANSPORT=http MCP_AUTH_TOKEN=meu_token PROSP_MCP_PORT=8080 npx mcp-prosp
+PROSP_API_KEY=sua_chave MCP_TRANSPORT=http MCP_AUTH_TOKEN=meu_token PROSP_MCP_PORT=8080 npx @agasalhem/mcp-prosp
 ```
 
 ## Environment variables

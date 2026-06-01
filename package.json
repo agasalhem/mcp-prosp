@@ -1,5 +1,5 @@
 {
-  "name": "mcp-prosp",
+  "name": "@agasalhem/mcp-prosp",
   "version": "1.0.0",
   "description": "MCP server for Prosp.ai – 15 tools for LinkedIn outbound automation (stdio & HTTP transports)",
   "type": "module",
